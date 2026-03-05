@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: sung-leozin-woo-portfolio
+    env: static
+    buildCommand: ""
+    staticPublishPath: .
+    pullRequestPreviewsEnabled: false
