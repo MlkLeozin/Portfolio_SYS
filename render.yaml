@@ -1,7 +1,23 @@
 services:
   - type: web
-    name: sung-leozin-woo-portfolio
+    name: portfolio
     env: static
-    buildCommand: ""
     staticPublishPath: .
-    pullRequestPreviewsEnabled: false
+```
+
+**Para editar no GitHub:**
+1. Clica no ficheiro `render.yaml` no repositório
+2. Clica no **lápis ✏️** para editar
+3. Apaga tudo e cola o conteúdo acima
+4. Clica **Commit changes**
+
+---
+
+Se continuar com erro, **ignora o `render.yaml`** e faz assim no Render:
+
+1. Clica **New → Static Site**
+2. Conecta o GitHub e seleciona o repositório
+3. Preenche os campos manualmente:
+```
+Build Command:     (deixa completamente vazio)
+Publish Directory: .
