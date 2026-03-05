@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sung Leozin Woo — Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== THEME BUTTON ===== -->
+<button class="theme-btn" id="themeBtn" title="Mudar para Claro">☀</button>
+
+<!-- ===== MATRIX CANVAS ===== -->
+<canvas id="matrix-canvas"></canvas>
+
+<!-- ===== BOOT SCREEN ===== -->
+<div id="system-boot">
+    <div class="boot-logo">宋 SUNG WOO SYS</div>
+    <div class="boot-text">
+        <div class="boot-line" id="bl1">&gt; INICIALIZANDO SISTEMA...</div>
+        <div class="boot-line" id="bl2">&gt; CARREGANDO MÓDULOS DE DESIGN...</div>
+        <div class="boot-line" id="bl3">&gt; VERIFICANDO PROTOCOLOS WEB...</div>
+        <div class="boot-line" id="bl4">&gt; SUNG LEOZIN WOO — v3.0 ONLINE</div>
+    </div>
+    <div class="boot-bar-wrap">
+        <div class="boot-bar-fill" id="bootBar"></div>
+    </div>
+</div>
+
+<!-- ===== HEADER ===== -->
+<header id="header">
+    <a href="#hero" class="brand">
+        <span class="brand-dot"></span>
+        Sung Leozin Woo
+    </a>
+    <div class="menu-btn" id="menuBtn"></div>
+    <nav class="navigation" id="navigation">
+        <a href="#hero">Início</a>
+        <a href="#about">Sobre</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#services">Serviços</a>
+        <a href="#work">Trabalhos</a>
+        <a href="#contact">Contato</a>
+    </nav>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+        <div class="hero-tag">Portfólio Pessoal</div>
+
+        <h1>
+            Olá, eu sou<br>
+            <span class="name-accent">Sung Leozin Woo</span>
+        </h1>
+
+        <div class="jp-roles-wrap">
+            <div class="jp-role-display">
+                <span class="jp-kanji" id="jpKanji"><span class="cursor-bar"></span></span>
+                <span class="jp-roman" id="jpRoman"></span>
+            </div>
+        </div>
+
+        <p class="hero-desc">
+            Criando experiências digitais modernas com código limpo e design impactante.
+            Especializado em front-end, interfaces criativas e soluções web completas.
+        </p>
+
+        <div class="hero-btns">
+            <a href="#work" class="btn-primary">Ver Trabalhos</a>
+            <a href="#contact" class="btn-outline">Entrar em Contato</a>
+        </div>
+    </div>
+
+    <div class="social-strip">
+        <a href="https://www.facebook.com/profile.php?id=100080631337693" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/MlkLeozin?tab=overview&from=2026-02-01&to=2026-02-28" title="GitHub"><i class="fab fa-github"></i></a>
+    </div>
+
+    <div class="scroll-indicator">
+        <div class="scroll-line"></div>
+        Rolar
+    </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about" id="about">
+    <div class="about-grid">
+        <div class="about-img-wrap" data-aos="fade-right" data-aos-duration="1200">
+            <img src="img1.jpg" alt="Sung Leozin Woo">
+        </div>
+        <div class="about-text" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+            <div class="section-label">Sobre mim</div>
+            <h2 class="section-heading">Oi galera!<br>Eu sou Leozin</h2>
+            <p>Sou um desenvolvedor web e designer apaixonado por criar experiências digitais que combinam estética impactante com funcionalidade precisa. Baseado em Moçambique, trago uma perspectiva única para cada projeto.</p>
+            <p>Minha jornada no desenvolvimento digital começou com HTML e CSS e evoluiu para um domínio completo do front-end moderno. Cada linha de código que escrevo tem um propósito — criar algo que as pessoas se lembrem.</p>
+            <div class="about-stats">
+                <div class="stat">
+                    <div class="stat-num">3+</div>
+                    <div class="stat-label">Anos</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">15+</div>
+                    <div class="stat-label">Projetos</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">100%</div>
+                    <div class="stat-label">Dedicação</div>
+                </div>
+            </div>
+            <a href="#contact" class="btn-primary">Fale Comigo</a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section class="skills" id="skills">
+    <div class="skills-grid">
+        <div class="skills-intro" data-aos="fade-right" data-aos-duration="1000">
+            <div class="section-label">Habilidades</div>
+            <h2 class="section-heading">Minhas<br>Habilidades</h2>
+            <p>Sou programador e designer web com experiência em desenvolvimento de sites modernos e responsivos. Domino HTML, CSS e JavaScript, criando interfaces funcionais e atraentes.</p>
+            <p>Além de explorar linguagens como Python, Dart e Java em projetos diversos. Meu foco é unir design criativo e programação eficiente para entregar soluções digitais completas e impactantes.</p>
+            <a href="#" class="btn-outline" style="margin-top:25px;">Download CV</a>
+        </div>
+        <div class="skills-bars" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+            <div class="skill-bar">
+                <div class="skill-info"><span>HTML</span><span class="skill-pct">95%</span></div>
+                <div class="skill-track"><div class="skill-fill" style="width:95%"></div></div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-info"><span>CSS</span><span class="skill-pct">90%</span></div>
+                <div class="skill-track"><div class="skill-fill" style="width:90%;animation-delay:.1s"></div></div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-info"><span>JavaScript</span><span class="skill-pct">70%</span></div>
+                <div class="skill-track"><div class="skill-fill" style="width:70%;animation-delay:.2s"></div></div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-info"><span>Python</span><span class="skill-pct">5%</span></div>
+                <div class="skill-track"><div class="skill-fill" style="width:5%;animation-delay:.3s"></div></div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-info"><span>JSON</span><span class="skill-pct">75%</span></div>
+                <div class="skill-track"><div class="skill-fill" style="width:75%;animation-delay:.4s"></div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="services" id="services">
+    <div class="services-header" data-aos="fade-up" data-aos-duration="1000">
+        <div class="section-label">Serviços</div>
+        <h2 class="section-heading">Meus Serviços</h2>
+    </div>
+    <div class="services-grid">
+        <div class="service-card" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+            <div class="service-num">01</div>
+            <div class="service-icon"><i class="fas fa-palette"></i></div>
+            <h3>Web Design</h3>
+            <p>Interfaces modernas e responsivas que valorizam a experiência do utilizador. Combino estética criativa com programação eficiente para resultados impactantes.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <div class="service-num">02</div>
+            <div class="service-icon"><i class="fas fa-object-group"></i></div>
+            <h3>Motion Graphic Design</h3>
+            <p>Animações e gráficos em movimento que dão vida às ideias. Interfaces dinâmicas e experiências visuais que capturam a atenção do utilizador.</p>
+        </div>
+        <div class="service-card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+            <div class="service-num">03</div>
+            <div class="service-icon"><i class="fas fa-file-code"></i></div>
+            <h3>Desenvolvimento Web</h3>
+            <p>Sites modernos, rápidos e responsivos com HTML, CSS e JavaScript. Foco em páginas funcionais, seguras e adaptadas a qualquer dispositivo.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== WORK ===== -->
+<section class="work" id="work">
+    <div class="work-header" data-aos="fade-up" data-aos-duration="1000">
+        <div class="section-label">Portfólio</div>
+        <h2 class="section-heading">Meus Trabalhos</h2>
+    </div>
+    <div class="projects-grid">
+
+        <div class="project-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+            <div class="project-img">
+                <img src="work1.jpg" alt="Portfolio Pessoal">
+                <div class="project-img-overlay">
+                    <a href="#" class="proj-action-btn"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://github.com/MlkLeozin?tab=overview&from=2026-02-01&to=2026-02-28" class="proj-action-btn"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="project-info">
+                <div class="project-tag">Web Design</div>
+                <h3>Portfolio Pessoal v1</h3>
+                <p>Site de portfólio moderno e responsivo com animações CSS e design dark.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JS</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
+            <div class="project-img">
+                <img src="work2.jpg" alt="Landing Page">
+                <div class="project-img-overlay">
+                    <a href="#" class="proj-action-btn"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://github.com/MlkLeozin?tab=overview&from=2026-02-01&to=2026-02-28" class="proj-action-btn"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="project-info">
+                <div class="project-tag">Frontend</div>
+                <h3>Landing Page Criativa</h3>
+                <p>Página de aterragem com scroll suave, animações de entrada e layout assimétrico.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">AOS</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+            <div class="project-img">
+                <img src="work3.jpg" alt="Dashboard UI">
+                <div class="project-img-overlay">
+                    <a href="#" class="proj-action-btn"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://github.com/MlkLeozin?tab=overview&from=2026-02-01&to=2026-02-28" class="proj-action-btn"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="project-info">
+                <div class="project-tag">UI/UX</div>
+                <h3>Dashboard Admin UI</h3>
+                <p>Painel administrativo com gráficos, tabelas e design responsivo para gestão de dados.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="250">
+            <div class="project-img">
+                <img src="work4.jpg" alt="App Mobile UI">
+                <div class="project-img-overlay">
+                    <a href="#" class="proj-action-btn"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://github.com/MlkLeozin?tab=overview&from=2026-02-01&to=2026-02-28" class="proj-action-btn"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="project-info">
+                <div class="project-tag">Mobile Design</div>
+                <h3>App UI — Music Player</h3>
+                <p>Interface para aplicação de música mobile com tema dark e animações fluidas.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Figma</span><span class="tech-tag">CSS</span><span class="tech-tag">Dart</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+            <div class="project-img">
+                <img src="work5.jpg" alt="E-commerce">
+                <div class="project-img-overlay">
+                    <a href="#" class="proj-action-btn"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://github.com/MlkLeozin?tab=overview&from=2026-02-01&to=2026-02-28" class="proj-action-btn"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="project-info">
+                <div class="project-tag">E-Commerce</div>
+                <h3>Loja Online — Fashion</h3>
+                <p>Site de comércio eletrónico responsivo com catálogo de produtos e checkout.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JS</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="350">
+            <div class="project-img">
+                <img src="work6.jpg" alt="Blog">
+                <div class="project-img-overlay">
+                    <a href="#" class="proj-action-btn"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://github.com/MlkLeozin?tab=overview&from=2026-02-01&to=2026-02-28" class="proj-action-btn"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="project-info">
+                <div class="project-tag">Blog / CMS</div>
+                <h3>Blog Tecnologia</h3>
+                <p>Plataforma de blog com categorias, pesquisa e design editorial moderno.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JS</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact" id="contact">
+    <div class="contact-header" data-aos="fade-up" data-aos-duration="1000">
+        <div class="section-label">Contato</div>
+        <h2 class="section-heading">Entre em<br>Contato</h2>
+    </div>
+    <div class="contact-grid">
+        <div class="contact-info-cards" data-aos="fade-right" data-aos-duration="1000">
+            <div class="contact-card">
+                <div class="contact-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div><h4>Endereço</h4><p>Murrapaniua-1, Nampula, Moçambique</p></div>
+            </div>
+            
+            <div class="contact-card">
+                <div class="contact-card-icon"><i class="fas fa-phone"></i></div>
+                <div><h4>Celular</h4><a href="tel:+258864992333">+258 86 499 2333</a></div>
+            </div>
+            <div class="contact-card">
+                <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+                <div><h4>Email</h4><a href="mailto:leonelnelson07@email.com">leonelnelson07@email.com</a></div>
+            </div>
+            <div class="contact-card">
+                <div class="contact-card-icon"><i class="fas fa-globe"></i></div>
+                <div><h4>Whatssap</h4><p><a href="https://wa.link/9femug">Whatssap <i class="fa fa-whatsapp" aria-hidden="true"></i></a></p></div>
+            </div>
+        </div>
+        <div class="contact-form" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+            <div class="form-group"><input type="text" placeholder="Nome"></div>
+            <div class="form-group"><input type="email" placeholder="Email"></div>
+            <div class="form-group"><textarea placeholder="Mensagem"></textarea></div>
+            <button class="submit-btn">Enviar Mensagem</button>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <span class="footer-brand">Sung Leozin Woo</span>
+    <p class="footer-copy">© 2025 <a href="#">Coding Leozin</a>. Todos os direitos reservados.</p>
+</footer>
+
+<!-- ===== SCRIPTS ===== -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init({ offset: 0, once: true });</script>
+<script src="main.js"></script>
+
+<script>
+// MAP MODAL JS
+function openMap() {
+    var modal = document.getElementById('mapModal');
+    var iframe = document.getElementById('mapIframe');
+    if (!iframe.getAttribute('data-loaded')) {
+        iframe.src = 'https://maps.google.com/maps?q=Murrapaniua,Nampula,Mozambique&z=14&output=embed';
+        iframe.setAttribute('data-loaded', 'true');
+    }
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+}
+
+function closeMap() {
+    document.getElementById('mapModal').style.display = 'none';
+    document.body.style.overflow = '';
+}
+
+document.getElementById('mapModal').addEventListener('click', function(e) {
+    if (e.target === this) closeMap();
+});
+
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeMap();
+});
+</script>
+
+</body>
+</html>
